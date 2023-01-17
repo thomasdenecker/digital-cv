@@ -1,69 +1,16 @@
 <template>
-  <div class="q-pa-md">
-    <q-stepper v-model="step" ref="stepper" color="primary" animated>
-      <q-step
-        :name="1"
-        title="Select campaign settings"
-        icon="settings"
-        :done="step > 1"
-      >
-        For each ad campaign that you create, you can control how much you're
-        willing to spend on clicks and conversions, which networks and
-        geographical locations you want your ads to show on, and more.
-      </q-step>
+  <p class="text-h2">Thomas Denecker, PhD</p>
+  <p>
+    Je suis actuellement ingénieur de recherche en courtage des données à
+    l’Institut Français de Bioinformatique. L’objectif de ma mission est
+    d’assurer l’orchestration des flux de données tout au long de la vie des
+    projets de recherche, depuis leur production jusqu’à leur valorisation dans
+    les banques de données internationales, en passant par les chaînes de
+    traitement et d’analyse, et en établissant des liens avec les informations
+    contenues dans le Plan de Gestion de Données (PGD). <br />
 
-      <q-step
-        :name="2"
-        title="Create an ad group"
-        caption="Optional"
-        icon="create_new_folder"
-        :done="step > 2"
-      >
-        An ad group contains one or more ads which target a shared set of
-        keywords.
-      </q-step>
-
-      <q-step :name="3" title="Ad template" icon="assignment" disable>
-        This step won't show up because it is disabled.
-      </q-step>
-
-      <q-step :name="4" title="Create an ad" icon="add_comment">
-        Try out different ad text to see what brings in the most customers, and
-        learn how to enhance your ads using features like ad extensions. If you
-        run into any problems with your ads, find out how to tell if they're
-        running and how to resolve approval issues.
-      </q-step>
-
-      <template v-slot:navigation>
-        <q-stepper-navigation>
-          <q-btn
-            @click="$refs.stepper.next()"
-            color="primary"
-            :label="step === 4 ? 'Finish' : 'Continue'"
-          />
-          <q-btn
-            v-if="step > 1"
-            flat
-            color="primary"
-            @click="$refs.stepper.previous()"
-            label="Back"
-            class="q-ml-sm"
-          />
-        </q-stepper-navigation>
-      </template>
-    </q-stepper>
-  </div>
+    En parallèle de cette activité, je suis impliqué dans la formation continue
+    en bioinformatique proposé par l’Institut Français de Bioinformatique .
+  </p>
+  
 </template>
-  
-<script>
-import { ref } from "vue";
-
-export default {
-  setup() {
-    return {
-      step: ref(1),
-    };
-  },
-};
-</script>
-  
