@@ -6,7 +6,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "touch .output/public/.nojekyll ; push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "devDependencies": {
     "@quasar/vite-plugin": "^1.3.0",
