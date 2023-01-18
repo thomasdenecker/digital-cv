@@ -3,6 +3,7 @@
 import { quasar } from '@quasar/vite-plugin'
 
 export default defineNuxtConfig({
+    ssr: false,
     target: 'static',
     router: {
         base: '/digital-cv/'
