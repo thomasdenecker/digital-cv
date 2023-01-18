@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     ssr: false,
     target: 'static',
     router: {
-        base: '/thomasdenecker.github.io/'
+        base: '/thomasdenecker.github.io/digital-cv/'
     },
     css: ['@quasar/extras/material-icons/material-icons.css',
         '~/assets/styles/quasar.sass',
