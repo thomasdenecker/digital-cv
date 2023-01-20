@@ -5,7 +5,7 @@ import { quasar } from '@quasar/vite-plugin'
 export default defineNuxtConfig({
     ssr: false,
     app: {
-        baseURL: '/digital-cv/', 
+        baseURL: '/digital-cv/',
     },
     css: ['@quasar/extras/material-icons/material-icons.css',
         '~/assets/styles/quasar.sass',
@@ -22,6 +22,6 @@ export default defineNuxtConfig({
                 sassVariables: 'assets/styles/quasar.variables.sass',
             }),
         ],
-    }
+    },
 
 })
